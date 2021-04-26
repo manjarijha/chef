@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    scroll-behavior: smooth;
+    
+}*
+p
+{
+color: black;
+font-weight: 400;
+}
+
+.banner
+{
+    background: url(bg.jpg);
+    position: relative;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2
+{
+    font-size: 5em;
+    color: white;
+}
+.banner .content p
+{
+font-size: 20px;
+color: white;
+}
+.btn
+{
+    font-size: 1em;
+    color: white;
+    background-color: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover
+{
+    letter-spacing: 6px;
+}
+header
+{
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    padding:  40px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+background: white;
+padding: 10px 100px;
+box-shadow: 0px 5px 20px rgb(0,0,0,0.05);
+}
+header .logo
+{
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+    text-decoration: none;
+}
+header.sticky .logo
+{
+    color: #111;
+}
+header .logo span
+{
+    color: #ff0157;
+}
+.navbar
+{
+    position: relative;
+    display: flex;
+}
+.navbar li
+{
+    list-style: none;
+    margin-right: 30px;
+}
+.navbar li a
+{
+ font-weight: 400;   
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+font-size: 1.3em;
+}
+header.sticky  .navbar li a 
+{
+color: #111;
+}
+
+ header .navbar li a:hover
+{
+color: #ff0157;
+transition-duration: 0.5s;
+font-size: 1.4em;
+}
+section
+{
+    padding: 100px;
+}
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+.row .col
+{
+    position: relative;
+    width: 48%;
+}
+.titletext
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titletext span
+{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col .imgbx
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.row .col .imgbx img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.menu .content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box
+{
+    margin: 20px;
+    width: 340px;
+    height: 400px;
+ box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+    border: 15px solid rgba(255, 255, 255, 0.466);
+}
+ .menu .content .box .imgbx 
+ {
+     position: relative;
+     width: 100%;
+     height: 100%;
+ }
+  .menu .content .box .imgbx img
+  {
+      position: relative;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+object-fit: cover;
+  }
+  
+  .menu .content .box .text 
+  {
+      padding: 15px 20px 0px 20px;
+  }
+  
+  .menu .content .box .text h3
+  {
+      color: #111;
+      font-weight: 500;
+  }
+
+.expert .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-top: 40px ;
+}
+.expert .content .box{
+    width: 250px;
+    margin: 15px;    
+}
+.expert .content .box .imgbx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.expert .content .box .imgbx img
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.expert .content .box 
+{
+    padding: 15px 0 5px;
+}
+
+.expert .content .box .text h3
+{
+    font-weight: 400;
+    color: #111;
+}
+.testimonial
+{
+    background: url(bg2.jpg);
+    background-size: cover;
+}
+.white .titletext,
+.white p
+{
+color: white;
+}
+.testimonial .content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.testimonial .content .box 
+{
+    width: 340px;
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.testimonial .content .box .imgbx
+{
+position: relative;
+overflow: hidden;
+margin-bottom: 20px;
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+.testimonial .content .box .imgbx img
+{
+    
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial .content .box .text
+{
+text-align: center;
+
+}
+
+.testimonial .content .box .text p 
+{
+color:rgb(0, 0, 0,);
+font-style: italic;
+}
+
+.testimonial .content .box .text h3
+{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 20px;
+}
+.contact
+{
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.contactform
+{
+    padding: 75px 50px;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0 15px 75px rgba(0,0,0, 0.2);
+    max-width: 500px;
+}
+.contactform h3
+{
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: #ff0157;
+    font-size: 1.7em;
+}
+.contactform .inputbox 
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactform .inputbox textarea,
+.contactform .inputbox input 
+{
+    padding: 10px;
+    width:100% ;
+    font-size: 16px;
+    outline: none;
+    font-weight: 300;
+    resize: none;
+    border: 1px solid rgba(0, 0, 0, 0.445);
+}
+
+
+.contactform .inputbox input[type="submit"]
+{
+    font-size: 1.3em;
+    background-color: #ff0157;
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    border-radius: 8px;
+}
+.copyright
+{
+    padding: 8px 40px;
+border-top: 1px solid rgba(0, 0,0 , 0.1);
+text-align: center;
+}
+
+.copyright p
+{
+    color: #111;
+    font-size: 20px;
+}
+.copyright a{
+    color: #ff0157;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 991px)
+{
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navbar
+    {
+        display: none;
+    }
+    header .navbar.active
+    {
+        height: 80vh;
+        width: 100%;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+    }
+    header.sticky .navbar li 
+    {
+        margin-left: 0;
+    }
+    
+    header .navbar li a{
+        font-weight: 300;
+        color: #111;
+        font-size: 1.6em;
+    }
+   .menutoggle
+   {
+       position: relative;
+       height: 40px;
+       width: 40px;
+       background-image: url(menu.png);
+       background-repeat: no-repeat;
+       background-size: 30px;
+       background-position: center;
+       cursor: pointer;
+   }
+.menutoggle.active
+{   
+       background-image: url(close.png);
+       background-repeat: no-repeat;
+       background-size: 25px;
+       background-position: center;
+}
+header.sticky .menutoggle
+{
+    filter: invert(1);
+}
+section
+{
+    padding: 20px;
+}
+banner content h2 
+{
+    font-size: 3em;
+    color: white;
+}
+.row {
+    flex-direction: column;
+}
+.row .col {
+    position: relative;
+    width: 100%;
+}
+.row .col .imgbx {
+    margin-top: 20px;
+    height: 300px;
+}
+.menu .content {
+    
+    margin-top: 20px;
+}
+.menu .content .box {
+    margin: 10px;
+}
+.menu .content .imgbox img {
+    height: 200px;
+}
+.btn{
+    margin-top: 50px;
+}
+p 
+.title
+{
+    text-align: center;
+}
+.titletext
+{
+    font-size: 1.8em;
+    line-height: ;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+}
+
+
